@@ -1,0 +1,9 @@
+// This file contains very basic styles
+
+@use '../abstracts/variables.scss' as var;
+@use '../abstracts/mixins' as mix;
+
+body {
+    background-color: var.$light-grayish-blue;
+    @include mix.center(center, center, 100vh, column);
+}

@@ -1,0 +1,9 @@
+// This file contains mixins
+
+@mixin center($justify, $align, $height, $dir) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    min-height: $height;
+    flex-direction: $dir;
+}
