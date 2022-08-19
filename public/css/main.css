@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +6,116 @@
 }
 
 body {
+  font-family: "Manrope", sans-serif;
+}
+
+h1 {
+  margin-block: 3rem 1rem;
+  color: hsl(217deg, 19%, 35%);
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.9rem;
+  color: hsl(214deg, 17%, 51%);
+  margin-bottom: 3rem;
+}
+
+footer p:nth-of-type(1) {
+  margin-bottom: 0.5rem;
+  color: hsl(217deg, 19%, 35%);
+  font-weight: 700;
+}
+
+footer p:nth-of-type(2) {
+  margin-bottom: 0;
+}
+
+body {
+  position: relative;
   background-color: hsl(210deg, 46%, 95%);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: unset;
   min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  margin-top: 5rem;
+  margin-inline: 2rem;
+}
+
+footer {
+  margin-inline: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.avatar {
+  width: 4rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+/** Styling the watermark
+* 1. putting it in the corner
+* 2. making it a circle
+* 3. making it transparent and opaque with hover or not (smoothly)
+*/
+.water-mark {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  width: 5rem;
+  border-radius: 100%;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  opacity: 0.2;
+  transition: 250ms opacity ease;
+}
+.water-mark:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card-top {
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.card-top .middle {
+  padding-inline: 3rem;
+}
+.card-top .image {
+  height: 20rem;
+  overflow: hidden;
+}
+.card-bottom {
+  display: flex;
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: row;
+  border-radius: 0 0 1rem 1rem;
+  padding-bottom: 2rem;
+}
+.card-bottom .pop-up {
+  display: none;
+}
+
+footer {
+  padding-inline: 3rem;
+}
+
+.avatar-wrapper {
+  margin-right: 2rem;
+}
+.avatar-info {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
 }

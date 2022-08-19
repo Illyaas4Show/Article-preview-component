@@ -1,0 +1,16 @@
+footer {
+    padding-inline: 3rem;
+}
+
+.avatar {
+    &-wrapper {
+        margin-right: 2rem;
+    }
+
+    &-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+

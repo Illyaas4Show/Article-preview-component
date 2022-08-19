@@ -4,6 +4,18 @@
 @use '../abstracts/mixins' as mix;
 
 body {
+    position: relative;
     background-color: var.$light-grayish-blue;
-    @include mix.center(center, center, 100vh, column);
+
+    // Mixin to center contents in the body
+    @include mix.center(center, unset, 100vh, column);
+}
+
+main {
+    margin-top: 5rem;
+    margin-inline: 2rem;
+}
+
+footer {
+    margin-inline: 2rem;
 }
